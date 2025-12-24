@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1">
+
+    <title>100 Van Mess — Unofficial Parody (Not Affiliated)</title>
+    <meta
+      name="description"
+      content="Unofficial parody/commentary site. Not affiliated with 100vanness.com.">
+
+    <!-- Keep during setup; remove later when ready for indexing. -->
+    <meta name="robots" content="noindex,nofollow">
+
+    <!-- Safer link previews (avoid “official-looking” shares). -->
+    <meta
+      property="og:title"
+      content="100/150 Van 'Mess' — Unofficial Tenant-Run Community Board (Non-affiliated)">
+    <meta
+      property="og:description"
+      content="Not affiliated with 100vanness.com or any building management.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --panel: #12141c;
+        --text: #f2f4f8;
+        --muted: #c9cfda;
+        --border: #2a2f3b;
+
+        --warn-bg: #201a00;
+        --warn-border: #ffcc00;
+        --warn-text: #fff1b8;
+
+        --link: #8ab4ff;
+        --button: #1f6feb;
+        --button-hover: #2b7cff;
+        --button-text: #ffffff;
+
+        --radius: 16px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f7fb;
+          --panel: #ffffff;
+          --text: #141824;
+          --muted: #4f5b6b;
+          --border: #d6dbe6;
+
+          --warn-bg: #fff8d6;
+          --warn-border: #d4a500;
+          --warn-text: #3a2c00;
+
+          --link: #1a4fb3;
+          --button: #1f6feb;
+          --button-hover: #2b7cff;
+          --button-text: #ffffff;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 28px 18px 64px;
+      }
+
+      .alert {
+        border: 2px solid var(--warn-border);
+        background: var(--warn-bg);
+        color: var(--warn-text);
+        border-radius: var(--radius);
+        padding: 18px 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .alert strong {
+        display: block;
+        font-size: 1.05rem;
+        letter-spacing: 0.2px;
+      }
+
+      .alert p {
+        margin: 10px 0 0;
+      }
+
+      .pill {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(0, 0, 0, 0.12);
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      header {
+        margin-top: 20px;
+      }
+
+      h1 {
+        margin: 16px 0 6px;
+        font-size: 2.1rem;
+        letter-spacing: -0.5px;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.2rem;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .panel {
+        margin-top: 18px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: var(--button);
+        color: var(--button-text);
+        font-weight: 700;
+        text-decoration: none;
+        min-width: 220px;
+      }
+
+      .btn:hover {
+        background: var(--button-hover);
+        text-decoration: none;
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--text);
+        border: 1px solid var(--border);
+      }
+
+      .btn-secondary:hover {
+        border-color: rgba(255, 255, 255, 0.25);
+      }
+
+      ul {
+        margin: 10px 0 0 18px;
+        padding: 0;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        font-size: 0.95em;
+      }
+
+      footer {
+        margin-top: 26px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <!-- ABOVE-THE-FOLD DISCLAIMER (do not move to footer) -->
+      <section class="alert" role="alert" aria-live="polite">
+        <strong>UNOFFICIAL COMMENTARY / PARODY — NOT AFFILIATED</strong>
+        <p>
+          <strong>100vanmess.com</strong> is <strong>not</strong> affiliated
+          with, endorsed by, or operated by <strong>100vanness.com</strong> or
+          any building management, ownership, or related entities.
+        </p>
+        <div class="pill">
+          Looking for the official site? Visit <code>100vanness.com</code>
+        </div>
+      </section>
+
+      <header>
+        <h1>100 Van Mess</h1>
+        <p class="subtitle">
+          A deliberately unofficial place for commentary, links, and updates.
+          No services. No payments. No “resident portal” energy.
+        </p>
+      </header>
+
+      <section class="panel">
+        <h2>Where to go for updates</h2>
+        <p style="margin: 0; color: var(--muted);">
+          Primary posts live on Substack. This site is a clear signpost (and a
+          confusion reducer).
+        </p>
+
+        <div class="actions">
+          <a
+            class="btn"
+            href="https://100vanmess.substack.com"
+            rel="noopener">
+            Read on Substack →
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://100vanmess.blog"
+            rel="noopener">
+            100vanmess.blog →
+          </a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>What this is / isn’t</h2>
+        <ul>
+          <li>
+            <strong>Is:</strong> parody, commentary, clearly labeled community
+            links.
+          </li>
+          <li>
+            <strong>Is not:</strong> building management, leasing, maintenance,
+            or an official channel.
+          </li>
+          <li>
+            <strong>Not affiliated:</strong> specifically not connected to
+            <code>100vanness.com</code>.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Contact (confusion / takedown requests)</h2>
+        <p style="margin: 0; color: var(--muted);">
+          If anything here is confusing or misdirected, email:
+          <a href="mailto:replace-me@example.com">replace-me@example.com</a>
+        </p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> 100 Van Mess — Unofficial parody.
+        <br>
+        Tip: remove <code>noindex</code> when you’re ready to be discoverable.
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent =
+        String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
